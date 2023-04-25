@@ -19,6 +19,7 @@
 .category a{
     text-decoration: none;
     cursor: pointer;
+    color: var(--text-color);
 }
 body {
     width: 100%;
