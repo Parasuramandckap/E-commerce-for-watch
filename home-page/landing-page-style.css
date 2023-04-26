@@ -34,46 +34,39 @@ body {
     width: 100%;
     height: 80px;
     box-sizing: border-box;
-}
+    padding: 25px 53px 0px 122px;
 
-.navbar-section .logo {
-    padding: 0px 20px 20px 122px;
-    padding-top: 20px;
 }
-
-.navbar-section .category {
-    padding-top: 14px;
-    padding-left: 50px;
+.category{
+    display: flex;
 }
-
-.navbar-section .category a,
-input {
-    font-family: 'Roboto', sans-serif;
-    padding-right: 40px;
+.category a {
+    padding-top: 5px;
+    padding-left: 70px;
 }
-
-.navbar-section .category img {
-    padding-right: 40px;
-}
-
-.search {
-    padding: 10px;
-    border-radius: 50px;
+.profile .search{
+    width: 200px;
+    height: 35px;
+    margin-left: 53px;
+    border-radius: 25px;
+    border: 1px solid var(--tercery-color);
     outline: none;
-    border: 1px solid #97999F;
+    text-align: start;
 }
-
-.search-icon {
+.profile .search::placeholder{
+    padding-left: 16px;
+    
+}
+.profile i{
     position: relative;
-    right: 40px;
-    top: 5px;
+    right: 30px;
+}
+.profile img{
+    padding-right: 20px;
+    padding-left: 10px;
 }
 
-.shop-icon {
-    position: relative;
-    top: 5px;
-}
-
+/* navbar completed */
 .banner-section>img {
     width: 100%;
     height: 350px;
@@ -89,16 +82,14 @@ input {
 }
 .products {
     padding: 0px 20px 0px 122px;
-    margin-top: 10px;
-
 }
 
 .product-detatils {
     border: 1px solid var(--tercery-color);
-    width: 220px;
-    height: 300px;
+    width: 206px;
+    height: 330px;
     border-radius: 15px;
-    /* margin-right: 30px; */
+    margin-top: 16px;
 }
 .product-detatils .wish-list{
     padding: 8px 0px 0px 180px;
@@ -109,8 +100,8 @@ input {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 133px;
-    height: 118px;;
+    width: 141px;
+    height: 141px;
 }
 
 .product-detatils .brand {
@@ -212,7 +203,8 @@ input {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20px;
+    width: 141px;
+    height: 141px;
 }
 .highlight{
     padding: 9px 20px 0px 122px;
