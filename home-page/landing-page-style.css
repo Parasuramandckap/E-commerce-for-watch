@@ -60,6 +60,7 @@ body {
 .profile i{
     position: relative;
     right: 30px;
+    cursor: pointer;
 }
 .profile img{
     padding-right: 20px;
@@ -266,4 +267,36 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+/* filter */
+header{
+    position: relative;
+}
+.filter{
+    position: absolute;
+    left: 980px;
+    top: 65px;
+    background-color: #ffffff;
+    width: 140px;
+    height: 500px;
+    border: 2px solid var(--primary-color);
+    display: none;
+}
+.filter ul li{
+    padding: 10px 10px 0px 0px;
+    list-style: none;
+    text-align: center;
+    font-size: 10px;
+}
+.filter p{
+    padding-left: 16px;
+    padding-top: 16px;
+    color: var(--text-color);
+    font-size: 16px;
+    font-family: sans-serif ;
+    font-weight: bold;
+}
+/* filter show and hide class */
+.show{
+    display: block;
 }

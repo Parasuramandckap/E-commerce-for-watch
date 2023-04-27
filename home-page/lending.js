@@ -21,3 +21,12 @@ window.addEventListener("DOMContentLoaded",()=>{
         }
     }).catch((error)=>console.log(error))
 })
+
+
+//addEventlisterner for filter
+
+let filterIcon = document.querySelector(".filler-icon")
+let filterDiv = document.querySelector(".filter")
+filterIcon.addEventListener("click",()=>{
+    filterDiv.classList.toggle("show")
+})
