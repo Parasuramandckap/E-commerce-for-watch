@@ -296,7 +296,7 @@ header{
     font-family: sans-serif ;
     font-weight: bold;
 }
-/* filter show and hide class */
+/* filter show and hide class user */
 .show{
     display: block;
 }
