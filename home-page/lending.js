@@ -90,6 +90,11 @@ window.addEventListener("DOMContentLoaded",()=>{
 
 let filterIcon = document.querySelector(".filler-icon")
 let filterDiv = document.querySelector(".filter")
+
 filterIcon.addEventListener("click",()=>{
     filterDiv.classList.toggle("show")
+    // hide(document.querySelector(".user"))
+    // hide(document.querySelector(".wishlist"))
+    // hide(document.querySelector(".cart"))
 })
+

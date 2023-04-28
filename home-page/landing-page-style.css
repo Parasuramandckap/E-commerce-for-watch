@@ -76,6 +76,9 @@ body {
 }
 
 /* navbar completed */
+.shop-icon{
+    cursor: pointer;
+}
 .banner-section>img {
     width: 100%;
     height: 350px;
@@ -328,4 +331,38 @@ header{
 /* filter show and hide class user */
 .show{
     display: block;
+}
+.hide{
+    display: none;
+}
+/* user */
+.user{
+    position: absolute;
+    left: 1054px;
+    top: 65px;
+    background-color: #ffffff;
+    width: 125px;
+    height: 149px;
+    border: 2px solid var(--primary-color);
+    display: none;
+}
+.wishlist{
+    position: absolute;
+    left: 1054px;
+    top: 65px;
+    background-color: #ffffff;
+    width: 125px;
+    height: 149px;
+    border: 2px solid var(--primary-color);
+    display: none;
+}
+.cart{
+    position: absolute;
+    left: 1054px;
+    top: 65px;
+    background-color: #ffffff;
+    width: 125px;
+    height: 149px;
+    border: 2px solid var(--primary-color);
+    display: none;
 }
