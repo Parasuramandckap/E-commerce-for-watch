@@ -296,8 +296,8 @@ header{
     left: 980px;
     top: 65px;
     background-color: #ffffff;
-    width: 140px;
-    height: 500px;
+    width: 200px;
+    height: 350px;
     border: 2px solid var(--primary-color);
     display: none;
 }
@@ -307,13 +307,23 @@ header{
     text-align: center;
     font-size: 10px;
 }
-.filter p{
+.filter ul{
+    padding-top: 10px;
     padding-left: 16px;
-    padding-top: 16px;
+}
+.filter p{
+    /* padding-left: 16px; */
+    /* padding-top: 16px; */
     color: var(--text-color);
     font-size: 16px;
     font-family: sans-serif ;
     font-weight: bold;
+}
+.filter ul div{
+    padding-top: 5px;
+}
+.filter ul div span{
+    padding-left: 16px;
 }
 /* filter show and hide class user */
 .show{
