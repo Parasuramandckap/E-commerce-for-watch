@@ -52,19 +52,27 @@ body {
     border: 1px solid var(--tercery-color);
     outline: none;
     text-align: start;
+    position: relative;
+    bottom: 5px;
 }
 .profile .search::placeholder{
     padding-left: 16px;
     
 }
 .profile i{
+
     position: relative;
-    right: 30px;
+    right: 32px;
+    bottom: 4px;
     cursor: pointer;
+
 }
 .profile img{
     padding-right: 20px;
     padding-left: 10px;
+    width: 24px;
+    height: 24px;
+    color: var(--tercery-color);
 }
 
 /* navbar completed */
@@ -84,7 +92,12 @@ body {
 .products {
     padding: 0px 20px 0px 122px;
 }
-
+.product-detatils .heart{
+    padding-left: 175px;
+    padding-top: 7px;
+    font-size: 20px;
+    color: var(--tercery-color);
+}
 .product-detatils {
     border: 1px solid var(--tercery-color);
     width: 206px;
@@ -206,6 +219,12 @@ body {
     margin-right: auto;
     width: 141px;
     height: 141px;
+}
+.loved-list .heart{
+    padding-left: 185px;
+    padding-top: 7px;
+    font-size: 20px;
+    color: var(--tercery-color);
 }
 .highlight{
     padding: 9px 20px 0px 122px;
