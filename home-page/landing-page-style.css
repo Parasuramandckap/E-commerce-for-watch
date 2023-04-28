@@ -16,6 +16,9 @@
 .category a:hover{
     color: var(--primary-color);
 }
+/* .category a:visited{
+    color: var(--primary-color);
+} */
 .category a{
     text-decoration: none;
     cursor: pointer;
@@ -54,6 +57,7 @@ body {
     text-align: start;
     position: relative;
     bottom: 5px;
+    padding-left: 5px;
 }
 .profile .search::placeholder{
     padding-left: 16px;
