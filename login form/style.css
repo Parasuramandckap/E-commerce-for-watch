@@ -134,10 +134,10 @@ label {
 .login-way {
   color: #182C3E;
   margin-left: 100px;
+  margin-top: 50px;
 }
 
-
-a.create {
+alert-message a.create {
   color: #10CED8;
   text-decoration: none;
 }
@@ -152,7 +152,7 @@ input[type="password"] {
   outline: none;
 }
 
-a{
+.loginbtn {
   background-color: #10CED8;
   color: #ffffff;
   padding: 10px 196px 10px 198px;
@@ -160,10 +160,26 @@ a{
   text-decoration: none;
   cursor: pointer;
 }
-a:hover{
+.create{
+  color: #10CED8;
+  text-decoration: none;
+  
+}
+.loginbtn:hover {
   background-color: #182C3E;
   color: #10CED8;
 }
+
+.alert-message {
+  color: #E77171;
+  border: 2px solid #E77171;
+  padding: 8px;
+  text-align: center;
+  font-size: 20px;
+  visibility: hidden
+  ;
+}
+
 span.eyeclose {
   position: relative;
   left: 393px;

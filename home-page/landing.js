@@ -7,9 +7,8 @@ window.addEventListener("DOMContentLoaded",()=>{
     .then(res=>res.json())
     .then(productsCreate=>{
         // console.log(data)
-        productsCreate.forEach((productsCreate)=>{
+        //function call product genarate
             productGenarate(productsCreate)
-        })
         for(let i=0;i<4;i++){
             // console.log(productsCreate[i])
             let mostDiv = document.createElement("div")
@@ -46,6 +45,7 @@ window.addEventListener("DOMContentLoaded",()=>{
 })
 
 function productGenarate(productsCreate){
+    productsCreate.forEach((productsCreate)=>{
     //create div for product details
     let  product_details = document.createElement("div")
     product_details.setAttribute("class",`product-detatils ${productsCreate.gender}`)
@@ -89,6 +89,8 @@ function productGenarate(productsCreate){
     
     //append product div to products
     products.appendChild(product_details)
+    })
+
 }
 
 //addEventlisterner for filter
@@ -110,7 +112,7 @@ function filler_products(brandName){
     // console.log(name)
     search.addEventListener("keyup",(e)=>{
         let searchWord = e.target.value.toLowerCase()
-        if(brandName.innerText.toLowerCase()===searchWord){
+        if(brandName.innerText.toLowerCase().indexOf(searchWord) !== -1){
             brandName.parentElement.style.display = "block"
         }else{
             brandName.parentElement.style.display = "none"
@@ -135,21 +137,9 @@ angerTag.forEach(element => {
 
 
 //filter
-let menAll = document.querySelector("#menAll")
-let product =  document.querySelector(".products")
-console.log(product)
-menAll.addEventListener("click",(e)=>{
-    if(menAll.checked){
-        let allproduct = document.querySelectorAll(".product-detatils")
-        allproduct.forEach((element)=>{
-            if(element.classList.contains("male")){
-                console.log(element)
-            }
-        })
-    }else{
-        console.log("not ok")
-    }
-})
+let gender = document.querySelectorAll("#gender")
+
+
 
 
 

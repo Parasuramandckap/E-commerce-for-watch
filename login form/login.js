@@ -30,7 +30,13 @@ form.addEventListener("click", (e) => {
     .then(data => {
         data.forEach(element => {
             if(element.email === userDetails[0] && element.password === userDetails[1]){
-                form.setAttribute("href","homepage/home.html")
+                let localStroge = window.localStorage
+                localStroge.setItem("email",userDetails[0])
+                localStroge.setItem("password",userDetails[1])
+                window.location = window.location.origin+"/home-page/landing-page.html"  
+            }
+            else{
+                alertMessage("uset not exits")
             }
         });
     })
@@ -58,7 +64,8 @@ function setSuccess(element, message) {
 
 function alertMessage(message){
     Alertmessage.innerText = message
+    Alertmessage.style.visibility = "visible"
     window.setTimeout(() => {
-        Alertmessage.innerText = ""
+        Alertmessage.style.visibility = "hidden"
     }, 1000);
 }
