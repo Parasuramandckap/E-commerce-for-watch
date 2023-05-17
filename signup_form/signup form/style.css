@@ -1,0 +1,125 @@
+*{
+    margin: 0%;
+    padding: 0;
+}
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+}
+.left{
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+}
+#password{
+  margin-bottom: -9px;
+}
+p{
+  display: none;
+}
+.my-hexagon{
+    width: 460px;
+    border-left: 223px solid transparent;
+    border-right: 341px solid transparent;
+    border-top: 368px solid #182C3E;
+    position: absolute;
+    left: 175%;
+    top: 78%;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+}
+.my-hexagon::after{
+    content: "";
+    width: 279px;
+    border-left: 277px solid transparent;
+    border-right: 488px solid transparent;
+    border-bottom: 545px solid #182C3E;
+    position: absolute;
+    left: 65%;
+    bottom: 95px;
+    transform: translate(-50%,-50%);
+    z-index: -2;
+}
+
+.fake-img{
+  /* z-index: 2;
+  position: relative;
+  bottom: 623px; */
+
+  position: absolute;
+  bottom: 103px;
+  z-index: 1;
+}
+/* ============== FORM ============== */
+form {
+    width: 400px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #182C3E;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #182C3E;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  input[type="submit"] {
+    background-color:#10CED8;
+    color: white;
+    width: 106%;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:#182C3E;
+    color: #10CED8;
+  }
+
+  p.already{
+    color: #182C3E;
+    margin-left: 100px;
+  }
+
+  a.already{
+    text-decoration: none;
+    color: #10CED8;
+    margin-left: 5px;
+  }
+
+  span.eyeclose{
+    color: #182C3E;
+    position: relative;
+    left: 390px;
+    bottom: 23px;
+  }
+
+  span.eyeopen{
+    color: #182C3E;
+    position: relative;
+    left: 372px;
+    bottom: 40px;
+    visibility: hidden;   
+  }
+.hide{
+  display: none;
+}
